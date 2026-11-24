@@ -1,0 +1,267 @@
+
+
+
+div p{
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+div h3,p{
+    text-align: center;
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fc;
+    color: #172238;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0862e8;
+}
+
+header a {
+    background-color: #0862e8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+#home {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 7%;
+    background-color: #edf5ff;
+}
+
+#home div {
+    width: 50%;
+}
+
+#home h1 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+#home p {
+    margin-bottom: 15px;
+}
+
+#home img {
+    width: 100%;
+}
+
+
+
+body > div:nth-of-type(2) {
+    padding: 30px 7%;
+    text-align: center;
+}
+
+body > div:nth-of-type(2) > div {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+body > div:nth-of-type(2) > div > div {
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+}
+
+
+
+#about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 7%;
+    background-color: white;
+}
+
+#about div {
+    width: 50%;
+}
+
+#about img {
+    width: 100%;
+}
+
+
+
+#resources {
+    padding: 30px 7%;
+    text-align: center;
+}
+
+#resources > p {
+    margin: 10px 0 20px;
+}
+
+#resources > div {
+    display: flex;
+    gap: 15px;
+    text-align: left;
+}
+
+#resources > div > div {
+    width: 33.33%;
+    padding: 10px;
+    background-color: white;
+}
+
+#resources img {
+    width: 100%;
+}
+
+#resources h3 {
+    margin: 8px 0;
+}
+
+#courses {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 7%;
+    background-color: #14283f;
+    color: white;
+}
+
+footer div {
+    width: 22%;
+}
+
+footer a {
+    display: block;
+    color: white;
+    margin: 5px 0;
+}
+
+footer form {
+    display: flex;
+    gap: 5px;
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    body > div:nth-of-type(2) > div {
+        flex-wrap: wrap;
+    }
+
+    body > div:nth-of-type(2) > div > div {
+        width: 48%;
+    }
+
+    #resources > div {
+        flex-wrap: wrap;
+    }
+
+    #resources > div > div {
+        width: 48%;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    header,
+    #home,
+    #about,
+    footer {
+        flex-direction: column;
+    }
+
+    header {
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home {
+        text-align: center;
+    }
+
+    #home div,#about 
+    div {
+        width: 100%;
+    }
+
+    #about {
+        gap: 15px;
+    }
+
+    body > div:nth-of-type(2) > div {
+        flex-direction: column;
+    }
+
+    body > div:nth-of-type(2) > div > div {
+        width: 100%;
+    }
+
+    #resources > div {
+        flex-direction: column;
+    }
+
+    #resources > div > div {
+        width: 100%;
+    }
+
+    footer div {
+        width: 100%;
+    }
+}
